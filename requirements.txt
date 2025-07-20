@@ -1,0 +1,12 @@
+flask
+flask-cors
+pandas
+requests
+gunicorn
+torch
+transformers
+networkx
+scikit-learn
+numpy
+javalang
+pyjsparser
