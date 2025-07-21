@@ -1,6 +1,7 @@
 from flask import Flask
+from flask_cors import CORS
+from routes import routes
+
 app = Flask(__name__)
-@app.route("/")
-def hello():
-    return "Hello from Render!"
-# Do NOT add app.run()
+CORS(app, origins="*")
+app.register_blueprint(routes, url_prefix="")
